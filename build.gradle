@@ -4,9 +4,10 @@ plugins {
 	id 'java'
 	id 'jacoco'
 }
+
+
 wrapper {
-	gradleVersion = '7.2'
-	distributionType = Wrapper.DistributionType.ALL
+	gradleVersion = '7.2' // Specify the desired Gradle version here
 }
 
 
