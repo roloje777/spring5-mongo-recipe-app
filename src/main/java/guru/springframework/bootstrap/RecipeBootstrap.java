@@ -39,7 +39,7 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
         loadCategories();
         loadUom();
         recipeRepository.saveAll(getRecipes());
-        log.debug("Loading Bootstrap Data");
+        //log.debug("Loading Bootstrap Data");
     }
 
     private void loadCategories(){
@@ -271,4 +271,6 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
         recipes.add(tacosRecipe);
         return recipes;
     }
+
+
 }
